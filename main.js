@@ -21,21 +21,19 @@ function updateDisplay(rental) {
     });
 }
 
-updateDisplay("Rental 1");
-rentalChoose.value = "Verse 1";
-
-
 
 //Google maps API
 var map, infoWindow;
       function initMap() {
         map = new google.maps.Map(document.getElementById('map'), {
           center: {lat: 43.717899, lng: -79.6582408},
-          zoom: 15
+          zoom: 15          
         });
-        infoWindow = new google.maps.InfoWindow;
     }
+        infoWindow = new google.maps.InfoWindow;
 
+updateDisplay("Rental 1");
+rentalChoose.value = "Verse 1";
 
 // Vacation rental property constructor
 function VacationRentalProperty(name, price, rating, location, rooms, availability, features) {
