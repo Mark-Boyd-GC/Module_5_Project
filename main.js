@@ -23,15 +23,6 @@ function updateDisplay(rental) {
 updateDisplay("Rental 1");
 rentalChoose.value = "Verse 1";
 
-var map, infoWindow;
-function initMap() {
-        map = new google.maps.Map(document.getElementById('map'), {
-          center: {lat: 43.717899, lng: -79.6582408},
-          zoom: 15,
-        });
-        infoWindow = new google.maps.InfoWindow;
-    }
-
 // Vacation rental property constructor
 function VacationRentalProperty(name, price, rating, location, rooms, availability, features) {
     this.name = name;
@@ -117,4 +108,13 @@ let p4 = new SuperhostRentalProperty("Rental 4", 2000, "5/5", "Los Angeles", 3, 
 
 // Calling description function on p4 object which will display the object properties in html
 p4.description(p4);
+
+var map, infoWindow;
+function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: 43.717899, lng: -79.6582408},
+          zoom: 15,
+        });
+        infoWindow = new google.maps.InfoWindow;
+    }
 
