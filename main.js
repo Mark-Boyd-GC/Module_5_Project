@@ -1,5 +1,4 @@
 //JavaScript Document
-
 var map, infoWindow;
 function initMap() {
   map = new google.maps.Map(document.getElementById("map"), {
@@ -26,11 +25,12 @@ function initMap() {
         var markerCluster = new MarkerClusterer(map, markers,
             {imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'});
     }
+    
 var locations = [
     {lat: 43.717899, lng: -79.6582408},
     {lat: 40.6971494, lng: -74.2598655},
     {lat: 41.8339037, lng: -87.8720468},
-    {lat: 34.0207305, lng: -118.6919155
+    {lat: 34.0207305, lng: -118.6919155}
   ]
 
 let rentalChoose = document.querySelector("select");

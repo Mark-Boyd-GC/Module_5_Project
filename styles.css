@@ -8,7 +8,7 @@ body {
 
 /* Set the size of the div element that contains the map */
 #map {
-  width: 100%; /*width of the parent - article element */ 
-  height: 100%; /*height of the parent - article element */ 
+  width: 50%; /*width of the parent - article element */ 
+  height: 50%; /*height of the parent - article element */ 
   background-color: grey;
 }
