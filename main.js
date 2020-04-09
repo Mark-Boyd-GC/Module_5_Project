@@ -1,5 +1,4 @@
 //JavaScript Document
-
 //Fetch API used to retrieve text stored in .txt files located on the server
 let rentalChoose = document.querySelector("select");
 let displaySelection = document.querySelector("p");
