@@ -1,5 +1,6 @@
 //JavaScript Document
 
+//Fetch API used to retrieve text stored in .txt files located on the server
 let rentalChoose = document.querySelector("select");
 let displaySelection = document.querySelector("p");
 
@@ -19,6 +20,16 @@ function updateDisplay(rental) {
         });
     });
 }
+
+
+//Google maps API
+var map, infoWindow;
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: 43.717899, lng: -79.6582408},
+          zoom: 15
+        });
+        infoWindow = new google.maps.InfoWindow;
 
 updateDisplay("Rental 1");
 rentalChoose.value = "Verse 1";
@@ -43,6 +54,8 @@ VacationRentalProperty.prototype.description = function(obj) {
     let article = document.createElement("article");
     let h2 = document.createElement("h2");
     let ul = document.createElement("ul");
+    let div = document.createElement("div");
+    div.id = "map";
     h2.textContent = this.name + this.available(obj);
     let values = Object.values(obj);
     for(let i = 1; i < values.length; i++) {
