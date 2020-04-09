@@ -21,17 +21,6 @@ function updateDisplay(rental) {
     });
 }
 
-
-//Google maps API
-var map, infoWindow;
-      function initMap() {
-        map = new google.maps.Map(document.getElementById('map'), {
-          center: {lat: 43.717899, lng: -79.6582408},
-          zoom: 15          
-        });
-    }
-        infoWindow = new google.maps.InfoWindow;
-
 updateDisplay("Rental 1");
 rentalChoose.value = "Verse 1";
 
@@ -54,7 +43,7 @@ VacationRentalProperty.prototype.description = function(obj) {
     let section = document.querySelector("section");
     let article = document.createElement("article");
     let h2 = document.createElement("h2");
-    let ul = document.createElement("ul");    
+    let ul = document.createElement("ul");
     h2.textContent = this.name + this.available(obj);
     let values = Object.values(obj);
     for(let i = 1; i < values.length; i++) {
