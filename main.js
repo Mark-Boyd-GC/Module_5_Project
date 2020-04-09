@@ -1,5 +1,5 @@
+  
 //JavaScript Document
-//Fetch API used to retrieve text stored in .txt files located on the server
 let rentalChoose = document.querySelector("select");
 let displaySelection = document.querySelector("p");
 
@@ -108,3 +108,4 @@ let p4 = new SuperhostRentalProperty("Rental 4", 2000, "5/5", "Los Angeles", 3, 
 
 // Calling description function on p4 object which will display the object properties in html
 p4.description(p4);
+
