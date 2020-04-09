@@ -34,6 +34,7 @@ var map, infoWindow;
           zoom: 15
         });
         infoWindow = new google.maps.InfoWindow;
+    }
 
 
 // Vacation rental property constructor
