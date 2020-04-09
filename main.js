@@ -25,7 +25,7 @@ function initMap() {
         var markerCluster = new MarkerClusterer(map, markers,
             {imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'});
     }
-    
+
 var locations = [
     {lat: 43.717899, lng: -79.6582408},
     {lat: 40.6971494, lng: -74.2598655},
@@ -229,29 +229,3 @@ let p4 = new SuperhostRentalProperty(
 
 // Calling description function on p4 object which will display the object properties in html
 p4.description(p4);
-
-
- //Marker Clusters
-        // Create an array of alphabetical characters used to label the markers.
-        var labels = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
-
-        // Add some markers to the map.
-        // Note: The code uses the JavaScript Array.prototype.map() method to
-        // create an array of markers based on a given "locations" array.
-        // The map() method here has nothing to do with the Google Maps API.
-        var markers = locations.map(function(location, i) {
-          return new google.maps.Marker({
-            position: location,
-            label: labels[i % labels.length]
-          });
-        });
-
-        // Add a marker clusterer to manage the markers.
-        var markerCluster = new MarkerClusterer(map, markers,
-            {imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'});
-      }
-      var locations = [
-        {lat: 43.6425662, lng: -79.3892400},
-        {lat: 43.643563, lng: -79.392009},
-        {lat: 43.642662, lng: -79.392964}
-      ]
